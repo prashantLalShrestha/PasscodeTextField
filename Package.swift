@@ -12,6 +12,7 @@ let package = Package(
             targets: ["PasscodeTextField"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/prashantLalShrestha/DeviceX.git", from: "1.1.3"),
     ],
     targets: [
         .target(
