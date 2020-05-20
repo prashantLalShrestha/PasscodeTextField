@@ -17,11 +17,11 @@ let package = Package(
     targets: [
         .target(
             name: "PasscodeTextField",
-            dependencies: [],
+            dependencies: ["DeviceX"],
             path: "Sources"),
         .testTarget(
             name: "PasscodeTextFieldTests",
-            dependencies: ["PasscodeTextField"],
+            dependencies: ["PasscodeTextField", "DeviceX"],
             path: "PasscodeTextFieldTests"),
     ]
 )
